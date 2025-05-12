@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sola - LinkedIn for Research Labs, but Smarter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="gradient-background"></div>
+    
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">sola</div>
+                <div class="nav-links">
+                    <a href="#features">Features</a>
+                    <a href="#how-it-works">How It Works</a>
+                    <a href="#testimonials">Testimonials</a>
+                    <a href="#faq">FAQ</a>
+                </div>
+                <button class="nav-cta glass-btn">Join Waitlist</button>
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Discover the right research opportunities for you</h1>
+                    <p class="subtitle">LinkedIn for research labs, but smarter. Connect with the papers, projects, and people that match your interests.</p>
+                    
+                    <div class="hero-cta">
+                        <div class="glass-card waitlist-form">
+                            <h3>Be the first to know when we launch</h3>
+                            <div class="form-group">
+                                <input type="text" id="firstName" placeholder="First name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" placeholder="Email address">
+                            </div>
+                            <div class="form-group">
+                                <select id="researchArea">
+                                    <option value="" disabled selected>Primary research interest</option>
+                                    <option value="ai">Artificial Intelligence</option>
+                                    <option value="neuro">Neuroscience</option>
+                                    <option value="bio">Biology</option>
+                                    <option value="chem">Chemistry</option>
+                                    <option value="physics">Physics</option>
+                                    <option value="cs">Computer Science</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <button id="joinWaitlist" class="primary-btn">Join the waitlist</button>
+                            <p class="waitlist-count"><span id="waitlistCount">254</span> people have joined the movement</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="glass-card platform-preview">
+                        <div class="preview-header">
+                            <div class="preview-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="preview-title">Research Recommendations</div>
+                        </div>
+                        <div class="preview-content">
+                            <div class="search-result">
+                                <div class="result-score">98% match</div>
+                                <h4>Neuromorphic Computing Lab</h4>
+                                <p>Stanford University</p>
+                                <div class="result-tags">
+                                    <span>Neural Networks</span>
+                                    <span>Hardware Acceleration</span>
+                                </div>
+                            </div>
+                            <div class="search-result">
+                                <div class="result-score">92% match</div>
+                                <h4>Emergent Systems Group</h4>
+                                <p>MIT Media Lab</p>
+                                <div class="result-tags">
+                                    <span>AI Ethics</span>
+                                    <span>Complex Systems</span>
+                                </div>
+                            </div>
+                            <div class="search-result">
+                                <div class="result-score">89% match</div>
+                                <h4>Cognitive Computing Research</h4>
+                                <p>UC Berkeley</p>
+                                <div class="result-tags">
+                                    <span>Machine Learning</span>
+                                    <span>Cognitive Science</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="container">
+                <h2>Why researchers choose Sola</h2>
+                <div class="features-grid">
+                    <div class="feature-card glass-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>Semantic Search</h3>
+                        <p>Find research papers and labs based on meaning, not just keywords. Our AI understands what you're looking for.</p>
+                    </div>
+                    <div class="feature-card glass-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <h3>Project Match</h3>
+                        <p>Discover project opportunities that align with your research interests and career goals.</p>
+                    </div>
+                    <div class="feature-card glass-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Lab Connections</h3>
+                        <p>Connect directly with research labs and faculty that are looking for students with your specific interests.</p>
+                    </div>
+                    <div class="feature-card glass-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>Idea Generation</h3>
+                        <p>Get personalized research ideas based on your interests and emerging trends in your field.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="how-it-works">
+            <div class="container">
+                <h2>How Sola Works</h2>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content glass-card">
+                            <h3>Create Your Research Profile</h3>
+                            <p>Tell us about your interests, skills, and academic background to help us understand what matters to you.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content glass-card">
+                            <h3>Discover Perfect Matches</h3>
+                            <p>Our semantic search analyzes thousands of papers, projects, and lab descriptions to find what's relevant to you.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content glass-card">
+                            <h3>Connect with Labs</h3>
+                            <p>Reach out to labs that match your interests, with personalized insights to help you start meaningful conversations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <h2>What Researchers Are Saying</h2>
+                <div class="testimonial-slider">
+                    <div class="testimonial glass-card active">
+                        <div class="testimonial-content">
+                            <p>"Sola helped me find the perfect lab for my interests in computational neuroscience. Without it, I would have spent months searching and probably settled for something that wasn't the right fit."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"></div>
+                            <div class="author-info">
+                                <h4>Alex Johnson</h4>
+                                <p>PhD Student, Stanford University</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial glass-card">
+                        <div class="testimonial-content">
+                            <p>"As a lab director, finding students who are truly passionate about our specific research focus has always been challenging. Sola's matching algorithm has brought us candidates who are genuinely excited about our work."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"></div>
+                            <div class="author-info">
+                                <h4>Dr. Maya Patel</h4>
+                                <p>Research Director, MIT</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial glass-card">
+                        <div class="testimonial-content">
+                            <p>"The paper recommendations on Sola are incredibly accurate. It's like having a research assistant who knows exactly what I'm looking for, even when I'm not sure how to articulate it."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"></div>
+                            <div class="author-info">
+                                <h4>Jamie Zhang</h4>
+                                <p>Postdoctoral Researcher, UC Berkeley</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                    <div class="slider-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="faq">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-item glass-card">
+                        <div class="faq-question">
+                            <h3>Who is Sola for?</h3>
+                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Sola is designed for undergraduate students, graduate students, postdocs, and early career researchers looking to find the right research opportunities. It's also valuable for lab directors and PIs who want to connect with students who are passionate about their specific research areas.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item glass-card">
+                        <div class="faq-question">
+                            <h3>How does semantic search work?</h3>
+                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Unlike traditional keyword search, our semantic search understands the meaning behind research concepts. It uses advanced natural language processing to match you with labs and papers based on conceptual similarity, not just literal word matches.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item glass-card">
+                        <div class="faq-question">
+                            <h3>When will Sola launch?</h3>
+                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We're currently in private beta with select research institutions. Join our waitlist to be notified when we open up access more broadly, expected in late 2025.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item glass-card">
+                        <div class="faq-question">
+                            <h3>Is Sola free to use?</h3>
+                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Sola offers a free tier for students and researchers with basic features. Premium features, like advanced analytics and priority lab introductions, will be available through a subscription model.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content glass-card">
+                    <h2>Ready to revolutionize your research journey?</h2>
+                    <p>Join the waitlist today and be among the first to experience Sola when we launch.</p>
+                    <button class="primary-btn" id="finalCta">Join the waitlist</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">sola</div>
+                    <p>LinkedIn for research labs, but smarter.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Platform</h4>
+                        <ul>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#how-it-works">How It Works</a></li>
+                            <li><a href="#">For Students</a></li>
+                            <li><a href="#">For Labs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Data Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect with us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Sola. All rights reserved.</p>
+                <p>Made with <i class="fas fa-heart"></i> by the sola team</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
