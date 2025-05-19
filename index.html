@@ -3,36 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sola - LinkedIn for research labs, but smarter</title>
+  <title>sola - LinkedIn for research labs, but smarter</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&family=Inter:wght@400;600;700&family=Vollkorn:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&family=Inter:wght@400;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container">
     <!-- Hero Section -->
     <section class="hero">
-      <div class="hero-background">
-        <img src="sola-backdrop.png" alt="Sola backdrop" class="hero-image">
+      <div class="section-background">
+        <img src="sola-backdrop.png" alt="sola backdrop" class="hero-image">
       </div>
       
       <!-- Logo and Tagline with Fade In -->
       <div class="hero-content fade-in">
         <h1 class="logo">sola</h1>
-        <p class="tagline">
+        <p class="tagline libre-baskerville">
           <span class="highlight-orange">LinkedIn for research labs, but smarter.</span>
         </p>
         
         <!-- Typed Greeting -->
         <div class="typed-greeting-container">
           <span class="typed-greeting"></span>
-          <span class="cursor"></span>
         </div>
         
-        <button class="cta-button">
-          Join Waitlist 
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow-icon"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+        <button class="submit-button">
+          Join Now 
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mail-icon"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
         </button>
       </div>
       
@@ -45,111 +44,40 @@
     <!-- Value Proposition Section -->
     <section class="value-section" id="valueSection">
       <div class="section-background">
-        <img src="sola-backdrop2.png" alt="Sola value backdrop" class="section-image">
+        <img src="sola-backdrop2.png" alt="sola value backdrop" class="section-image">
       </div>
       
       <div class="section-content">
         <h2 class="section-title animate-on-scroll">
           Stop getting <span class="highlight-dark-orange">lost</span> in Google Scholar
         </h2>
-        <p class="section-description animate-on-scroll vollkorn">
+        <p class="section-description animate-on-scroll libre-baskerville">
           Sola cuts through the <span class="highlight-orange">noise</span> and shows you what's <span class="highlight-amber">worth your time</span>, helping students and early researchers find the right papers, project ideas, and lab connections.
         </p>
         
         <div class="features-grid">
-          <div class="feature-card animate-on-scroll" data-delay="0">
+          <div class="feature-card glass-card animate-on-scroll" data-delay="0">
             <div class="feature-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16.15l4.78 2.61-0.9-5.2 3.8-3.58-5.23-0.76L12 4.5 9.55 9.22l-5.23 0.76 3.8 3.58-0.9 5.2L12 16.15z"></path></svg>
             </div>
             <h3 class="feature-title">Discover Relevant Research</h3>
-            <p class="feature-description vollkorn-italic">Find papers that actually matter to your interests, not just what has the most citations.</p>
+            <p class="feature-description libre-baskerville-italic">Find papers that actually matter to your interests, not just what has the most citations.</p>
           </div>
           
-          <div class="feature-card animate-on-scroll" data-delay="150">
+          <div class="feature-card glass-card animate-on-scroll" data-delay="150">
             <div class="feature-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16.15l4.78 2.61-0.9-5.2 3.8-3.58-5.23-0.76L12 4.5 9.55 9.22l-5.23 0.76 3.8 3.58-0.9 5.2L12 16.15z"></path></svg>
             </div>
-            <h3 class="feature-title">Find Project Ideas</h3>
-            <p class="feature-description vollkorn-italic">Get inspired with project suggestions based on your skills and research interests.</p>
+            <h3 class="feature-title">Finding Project Ideas</h3>
+            <p class="feature-description libre-baskerville-italic">Get inspired with project suggestions based on your skills and research interests.</p>
           </div>
           
-          <div class="feature-card animate-on-scroll" data-delay="300">
+          <div class="feature-card glass-card animate-on-scroll" data-delay="300">
             <div class="feature-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16.15l4.78 2.61-0.9-5.2 3.8-3.58-5.23-0.76L12 4.5 9.55 9.22l-5.23 0.76 3.8 3.58-0.9 5.2L12 16.15z"></path></svg>
             </div>
             <h3 class="feature-title">Connect With Labs</h3>
-            <p class="feature-description vollkorn-italic">Discover labs and researchers that align with your goals and research direction.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <!-- Testimonials Section -->
-    <section class="testimonials-section" id="testimonialsSection">
-      <div class="section-background">
-        <img src="sola-backdrop3.png" alt="Sola testimonials backdrop" class="section-image">
-      </div>
-      
-      <div class="section-content">
-        <h2 class="section-title animate-on-scroll">
-          Why Researchers <span class="highlight-dark-orange">Choose Sola</span>
-        </h2>
-        <p class="section-description animate-on-scroll vollkorn">
-          Hear from students and researchers who've <span class="highlight-amber">transformed their research journey</span>.
-        </p>
-        
-        <!-- Testimonial Grid -->
-        <div class="testimonials-grid animate-on-scroll">
-          <div class="testimonial-card">
-            <div class="testimonial-stars">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
-            </div>
-            <p class="testimonial-quote">"Sola helped me find the perfect lab for my interests. I was able to connect with researchers working on exactly what I'm passionate about."</p>
-            <p class="testimonial-author">Alex Chen</p>
-            <p class="testimonial-role">PhD Student, Computational Biology</p>
-          </div>
-          
-          <div class="testimonial-card">
-            <div class="testimonial-stars">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
-            </div>
-            <p class="testimonial-quote">"I used to spend hours sifting through papers. Sola's recommendations are spot-on and saved me countless hours of searching."</p>
-            <p class="testimonial-author">Priya Sharma</p>
-            <p class="testimonial-role">Masters Student, AI Research</p>
-          </div>
-          
-          <div class="testimonial-card">
-            <div class="testimonial-stars">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
-            </div>
-            <p class="testimonial-quote">"As a lab director, Sola helps me find students who are genuinely interested in our research area. The quality of applicants has been exceptional."</p>
-            <p class="testimonial-author">Dr. Michael Rodriguez</p>
-            <p class="testimonial-role">Lab Director, Quantum Computing</p>
-          </div>
-          
-          <div class="testimonial-card">
-            <div class="testimonial-stars">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
-            </div>
-            <p class="testimonial-quote">"Finding project ideas used to be my biggest challenge. With Sola, I discovered a research direction that I'm truly excited about."</p>
-            <p class="testimonial-author">Emma Wilson</p>
-            <p class="testimonial-role">Undergraduate Researcher</p>
+            <p class="feature-description libre-baskerville-italic">Discover labs and researchers that align with your goals and research direction.</p>
           </div>
         </div>
       </div>
@@ -158,7 +86,7 @@
     <!-- Waitlist Section -->
     <section class="waitlist-section" id="waitlist">
       <div class="section-background">
-        <img src="sola-backdrop4.png" alt="Sola waitlist backdrop" class="section-image">
+        <img src="sola-backdrop4.png" alt="sola waitlist backdrop" class="section-image">
       </div>
       
       <div class="section-content animate-on-scroll">
@@ -166,8 +94,8 @@
           <h2 class="section-title">
             Join Our <span class="highlight">Waitlist</span>
           </h2>
-          <p class="section-description vollkorn">
-            Be among the <span class="highlight">first</span> to experience Sola when we launch. Early members get <span class="highlight-white">priority access</span> and special features.
+          <p class="section-description libre-baskerville">
+            Be among the <span class="highlight">first</span> to experience sola when we launch. Early members get <span class="highlight-white">priority access</span> and special features.
           </p>
           
           <form class="waitlist-form">
@@ -178,7 +106,7 @@
             </button>
           </form>
           
-          <p class="privacy-note vollkorn-italic">
+          <p class="privacy-note libre-baskerville-italic">
             We respect your <span class="highlight">privacy</span> and will never share your information.
           </p>
         </div>
@@ -188,7 +116,7 @@
     <!-- Footer -->
     <section class="footer">
       <div class="section-background">
-        <img src="sola-backdrop.png" alt="Sola footer backdrop" class="section-image">
+        <img src="sola-backdrop2.png" alt="sola footer backdrop" class="section-image">
         <div class="footer-overlay"></div>
       </div>
       
@@ -196,9 +124,6 @@
         <div class="footer-main">
           <div class="footer-logo">
             <h2 class="logo-small">sola</h2>
-            <p class="tagline-small vollkorn">
-              Finding your <span class="highlight-amber">research path</span>
-            </p>
           </div>
           
           <div class="footer-links">
@@ -210,8 +135,8 @@
         </div>
         
         <div class="footer-bottom">
-          <p class="copyright vollkorn">
-            © <span id="current-year"></span> Sola. All rights reserved. <span class="highlight-amber">Built with passion</span> for researchers.
+                      <p class="copyright libre-baskerville">
+            © <span id="current-year"></span> sola. All rights reserved. <span class="highlight-amber">Built with passion</span> for researchers.
           </p>
         </div>
       </div>
