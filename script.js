@@ -5,9 +5,8 @@
 
 // DOM Elements
 const scrollIndicator = document.querySelector('.scroll-indicator');
-const ctaButton = document.querySelector('.cta-button');
+const submitButton = document.querySelector('.hero .submit-button');
 const valueSection = document.getElementById('valueSection');
-const testimonialsSection = document.getElementById('testimonialsSection');
 const waitlistSection = document.getElementById('waitlist');
 const emailInput = document.querySelector('.email-input');
 const waitlistForm = document.querySelector('.waitlist-form');
@@ -35,6 +34,9 @@ document.addEventListener('DOMContentLoaded', function() {
 /**
  * Type out the greeting message based on time of day
  */
+/**
+ * Type out the greeting message based on time of day
+ */
 function typeGreeting() {
   // Get the current hour
   const hour = new Date().getHours();
@@ -51,7 +53,9 @@ function typeGreeting() {
     greeting = 'welcome, night owl';
   }
   
+  // Type out the greeting
   let i = 0;
+  typedGreeting.textContent = ''; // Clear any existing text
   
   function type() {
     if (i < greeting.length) {
@@ -61,7 +65,7 @@ function typeGreeting() {
     }
   }
   
-  setTimeout(type, 1000);
+  setTimeout(type, 500);
 }
 
 /**
@@ -74,7 +78,6 @@ function initScrollAnimations() {
   // Add scroll event listener for animations
   window.addEventListener('scroll', function() {
     checkVisibility();
-    parallaxEffect();
   });
 }
 
@@ -85,8 +88,8 @@ function checkVisibility() {
   animatedElements.forEach(element => {
     const rect = element.getBoundingClientRect();
     const isVisible = 
-      rect.top <= (window.innerHeight * 0.8) && 
-      rect.bottom >= (window.innerHeight * 0.2);
+      rect.top <= (window.innerHeight * 0.85) && 
+      rect.bottom >= (window.innerHeight * 0.15);
     
     if (isVisible) {
       // Use the data-delay attribute if it exists
@@ -99,42 +102,12 @@ function checkVisibility() {
 }
 
 /**
- * Apply parallax effect to background elements
- */
-function parallaxEffect() {
-  const scrollY = window.scrollY;
-  
-  // Hero parallax
-  const heroImage = document.querySelector('.hero-image');
-  if (heroImage) {
-    heroImage.style.transform = `scale(${1 + scrollY * 0.0005})`;
-  }
-  
-  // Section images parallax
-  const sectionImages = document.querySelectorAll('.section-image');
-  sectionImages.forEach((image, index) => {
-    // Skip first image (hero) as it's handled separately
-    if (index > 0) {
-      const section = image.closest('section');
-      const sectionTop = section.offsetTop;
-      const sectionHeight = section.offsetHeight;
-      const scrollPosition = scrollY - sectionTop;
-      
-      if (scrollPosition > -window.innerHeight && scrollPosition < sectionHeight) {
-        const parallaxValue = scrollPosition * 0.0003;
-        image.style.transform = `scale(${1 + Math.abs(parallaxValue)})`;
-      }
-    }
-  });
-}
-
-/**
  * Set up event listeners
  */
 function setupEventListeners() {
-  // CTA button scrolls to waitlist
-  if (ctaButton && waitlistSection) {
-    ctaButton.addEventListener('click', function(e) {
+  // Submit button scrolls to waitlist
+  if (submitButton && waitlistSection) {
+    submitButton.addEventListener('click', function(e) {
       e.preventDefault();
       waitlistSection.scrollIntoView({ behavior: 'smooth' });
     });
@@ -163,6 +136,20 @@ function setupEventListeners() {
       }
     });
   }
+  
+  // Add hover effects to glass cards
+  const glassCards = document.querySelectorAll('.glass-card');
+  glassCards.forEach(card => {
+    card.addEventListener('mouseenter', function() {
+      this.style.transform = 'translateY(-5px)';
+      this.style.boxShadow = '0 15px 30px -10px rgba(0, 0, 0, 0.2)';
+    });
+    
+    card.addEventListener('mouseleave', function() {
+      this.style.transform = 'translateY(0)';
+      this.style.boxShadow = '0 4px 15px -5px rgba(0, 0, 0, 0.1)';
+    });
+  });
 }
 
 /**
