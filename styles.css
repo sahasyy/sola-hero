@@ -275,7 +275,10 @@ h1.logo {
 /* ===== VALUE SECTION ===== */
 .value-section {
   position: relative;
-  padding-bottom: 4rem;
+  padding: 6rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .value-section .section-background {
@@ -302,15 +305,17 @@ h1.logo {
 
 .value-section .section-title {
   font-weight: 800;
-  margin-top: 2rem;
+  margin-top: 0;
+}
+
+.value-section .section-content {
+  padding: 4rem 2rem;
 }
 
 .features-grid {
   display: grid;
   gap: 3rem;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-  padding-bottom: 4rem;
+  margin: 4rem 0;
 }
 
 @media (max-width: 768px) {
@@ -318,6 +323,15 @@ h1.logo {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    margin: 3rem 0;
+  }
+  
+  .value-section {
+    padding: 4rem 0;
+  }
+  
+  .value-section .section-content {
+    padding: 2rem 1.5rem;
   }
 }
 
